@@ -1,0 +1,27 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; line-height:1.6; background:#f4f4f4; }
+
+.container { max-width: 1100px; margin: auto; padding: 20px; }
+
+header { background:#333; color:#fff; text-align:center; padding:60px 20px; }
+header h1 { font-size:2.5rem; margin-bottom:10px; }
+header p { font-size:1.2rem; margin-bottom:20px; }
+header .btn { padding:10px 20px; background:#f57c00; color:#fff; text-decoration:none; border-radius:5px; }
+
+section { margin:40px 0; background:#fff; padding:20px; border-radius:8px; }
+.feature-list { display:flex; flex-wrap:wrap; gap:20px; }
+.feature { flex:1; min-width:200px; background:#f0f0f0; padding:20px; border-radius:5px; }
+
+form { display:flex; flex-direction:column; gap:10px; }
+input, textarea, button { padding:10px; font-size:1rem; border-radius:5px; border:1px solid #ccc; }
+textarea { resize: vertical; min-height:80px; }
+button { background:#f57c00; color:#fff; cursor:pointer; border:none; }
+button:hover { background:#e67c00; }
+
+footer { text-align:center; padding:20px; background:#333; color:#fff; margin-top:20px; }
+
+/* ریسپانسیو */
+@media(max-width:768px){
+    .feature-list { flex-direction:column; }
+    header h1 { font-size:2rem; }
+}
